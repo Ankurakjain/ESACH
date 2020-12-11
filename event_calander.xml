@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<events>
+	<event>
+		<title>"Example Title"</title>
+		<speakers>"Example speaker1"</speakers>
+		<date>2.12.2020</date>
+		<theme>"An example topic"</theme>
+		<details>This is the information about the actual event</details>
+	</event>
+</events>

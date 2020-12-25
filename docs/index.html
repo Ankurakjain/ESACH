@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" href="script/main.js"></script>
@@ -18,12 +17,20 @@
                 x.style.display = "none";
             }
         }
+        function changeColorDark() {
+            var x = document.getElementsByClassName("color");
+            var i;
+            for (i = 0; i < x.length; i++) {
+              x[i].style.backgroundColor = "#2b2b2b";
+              x[i].style.color= "white";
+            }
+          }
         function changeColorPurple() {
             var x = document.getElementsByClassName("color");
             var i;
             for (i = 0; i < x.length; i++) {
               x[i].style.backgroundColor = "#6C62FF";
-              x[i].style.borderRightColor = "white";
+              x[i].style.borderRightColor = "black";
             }
           }
           function changeColorYellow() {
@@ -42,21 +49,40 @@
               x[i].style.backgroundColor = "#CCE7E7";
             }
           }
-        
+
+          document.getElementById("header").onload = function() {changeBgColor()};
+
+          function changeBgColor() {
+            var scrollPos = document.getElementsByTagName("html")[0].scrollTop;
+            var x = document.getElementById("header");
+            if (scrollPos > 0) {
+                x.style.backgroundColor = "#F3AF51";
+            } else {
+                x.style.backgroundColor = "transparent";
+            }
+          }
     </script>
 </head>
 
 <body>
-    <header class="pad">
+    <header class="pad" id="header">
         <h1 class="logo"><img src="img/logo.png" alt="Logo" height="32px"></h1>
         <input type="checkbox" class="nav-toggle" id="nav-toggle">
         <nav>
             <ul>
                 <li class="navbar-item"><a href="#home">Home</a></li>
-                <li class="navbar-item"><a href="#news">News</a>
-
+                <li class="navbar-item" ><a href="#news">News</a>
+<!--                     <ul class="dropdown" id="navbarNews">
+                        <li><a href="#">Sub-1</a></li>
+                        <li><a href="#">Sub-2</a></li>
+                      </ul> -->
                 </li>
-                <li class="navbar-item"><a href="#about">About</a></li>
+                <li class="navbar-item"><a href="#about">About</a>
+<!--                         <ul class="dropdown" id="navbarAbout">
+                            <li><a href="#">Sub-1</a></li>
+                            <li><a href="#">Sub-2</a></li>
+                          </ul> -->
+                </li>
                 <li class="navbar-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -67,9 +93,10 @@
     </header>
     <div class="color-changer">
         <div>
-            <button class="cirle black" onclick="myFunction()"></button>
+            <button class="cirle black" onclick="myFunction()">X</button>
         </div>
         <div class="color-picker" id="color-picker">
+            <button class="cirle black" onclick="changeColorDark()"></button>
             <button class="cirle purple" onclick="changeColorPurple()"></button>
             <button class="cirle yellow" onclick="changeColorYellow()"></button>
             <button class="cirle green" onclick="changeColorGreen()"></button>
@@ -127,48 +154,55 @@
                 </article>
             </div>
         </section>
-        <section class="pad grey gridCards" id="about">
+        <section class="pad gridCards" id="about">
             <div class="elementFull title">
                 Coordination Committee
             </div>
             <div class="elementFull cards">
                 <article class="card color">
                     <img class="card-image" src="img/placeholderMale.jpg">
-                    <h1 class="card-title">Marius Muller</h1>
+                    <h3 class="card-title">Marius Muller</h3>
                     <p class="card-text">Founding President</p>
                 </article>
                 <article class="card color">
-                    <img class="card-image" src="img/pcMan2.jpg">
-                    <h1 class="card-title">Carlota Marijuan Rodriguez</h1>
+                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <h3 class="card-title">Carlota Marijuan Rodriguez</h3>
                     <p class="card-text">Vice President, External Communications & Partners</p>
                 </article>
                 <article class="card color">
                     <img class="card-image" src="img/placeholderMale.jpg">
-                    <h1 class="card-title">Nuria Gscons Cuatrecasas</h1>
+                    <h3 class="card-title">Nuria Gscons Cuatrecasas</h3>
                     <p class="card-text">Internal Communications & Member Engagement</p>
                 </article>
                 <article class="card color">
-                    <img class="card-image" src="img/pcMan2.jpg">
-                    <h1 class="card-title">Ainara Guerra Fernandez</h1>
+                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <h3 class="card-title">Ainara Guerra Fernandez</h3>
                     <p class="card-text">Digital Media Manager</p>
                 </article>
                 <article class="card color">
                     <img class="card-image" src="img/placeholderMale.jpg">
-                    <h1 class="card-title">Alexandra de Carvalho Antunes</h1>
+                    <h3 class="card-title">Alexandra de Carvalho Antunes</h3>
                     <p class="card-text">Publications</p>
                 </article>
             </div>
         </section>
-        <section class="pad hero genova grid3" id="">
+        <section class="pad grid2" id="">
             <div>
-
+                <img class="imgGrid" src="img/genova.jpg" alt="Image Genova">
             </div>
             <article class="polygon color">
-                <h1>ESACH Genoa</h1>
-                <p>Is a group of students from different branches of art history and cultural heritage conservation that
+                <h1 title="titleGrid">ESACH Genoa</h1>
+                <p class="text50">Is a group of students from different branches of art history and cultural heritage conservation that
                     focus their studies of heritage and conservation that focus their studies on heritage and social
                     action from a critical point of view and seeking to care for the areas degrades of its city and
                     declared its as World Heritage Site.</p>
+            </article>
+            <div>
+                <img class="imgGrid" src="img/girona.jpg" alt="Image Genova">
+            </div>
+            <article class="polygon color">
+                <h1 title="titleGrid">ESACH Girona</h1>
+                <p class="text50">Group of students and young professionals from Catalonia who study cultural heritage together with the perspective of natural heritage. It has students from the Universities of Girona, as well as students from the University of the Balearic Islands, through the e-MTA Campus. The Members of ESACH GIRONA are from Master in Heritage mainly specialties in Cultural Heritage and Natural Heritage.</p>
             </article>
         </section>
         <section class="pad red grid3 bold" id="mission">
@@ -186,11 +220,17 @@
         </section>
         <section class="white red gridVideo" id="news">
             <div class="oneColumn color">
-                News
+                <div>News</div>
             </div>
             <div class="twoColumn">
+                <article class="video-container-title">
+                    ESACH Message at the high-level Policy Debate during the Berlin Cultural Heritage Summit 2018
+                </article>
                 <article class="video-container">
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/kotDM3YnzdU"></iframe>
+                </article>
+                <article class="video-container-title">
+                    ESACH Message at the high-level Policy Debate during the Berlin Cultural Heritage Summit 2018
                 </article>
                 <article class="video-container">
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JHnQK1Dhww0"></iframe>
@@ -256,7 +296,7 @@
                 </ul>
             </div>
             <div class="menu-footer-item">
-                <h3>Legal</h3>
+                <h3 style="margin-bottom: 0;">Legal</h3>
                 <ul>
                     <li class=""><a href="index.html">Privacy & Policy</a></li>
                     <li class=""><a href="index.html">Terms & Conditions</a></li>

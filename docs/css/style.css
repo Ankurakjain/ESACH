@@ -1,16 +1,30 @@
 /** html **/
+:root {
+  --yellow: #F3AF51;
+  --green: #CCE7E7;
+  --purple: #6C62FF;
+  --white: #f5f5f5;
+  --black: #2b2b2b;
+  --grey: #282828;
+  --navbar: #f5f5f5;
+  --sticky: #F3AF51;
+  --dark: #2b2b2b;
+  --light: #f5f5f5 ;
+}
+
 *, *::before, *::after {
     box-sizing: border-box; 
     font-family: 'Open Sans', sans-serif;
   }
 
 html {
-    background-color: white;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: white;
     background-image: radial-gradient(circle at 1px 1px, lightgrey 1px, transparent 0);
     background-size: 16px 16px;
+    color: var(--dark);
 }
 
 #myVideo {
@@ -27,9 +41,6 @@ html {
     background-color: #F3AF51;
 }
 
-.red {
-
-}
 .yellow {
     background-color: #F3AF51;
 }
@@ -62,10 +73,10 @@ button {
     border: 2px solid black;
     border-radius: 0;
     background-color: #282828;
-    color: white;
     font-size: 1.25rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
+    color: var(--light);
 }
 
 video {
@@ -86,7 +97,7 @@ video {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 
 .video-container {
@@ -99,12 +110,13 @@ video {
 /* navigation styles start here */
 
 header {
-    background-color: #D3D3D3;
+    background-color:var(--navbar);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 4rem;
+    border-bottom: 2px solid var(--dark);
   }
   
   .nav-toggle {
@@ -131,7 +143,7 @@ header {
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
     display: block;
-    background: white;
+    background: black;
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -157,7 +169,7 @@ header {
     text-align: left;
     top: 100%;
     left: 0;
-    background-color: #D3D3D3;
+    background-color:var(--navbar);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -201,80 +213,106 @@ header {
   .logo {
       position: relative;
       text-align: left;
-      left: -8px;
   }
   
-  @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-      display: none;
-    }
-  
-    header {
+@media screen and (min-width: 800px) {
+.nav-toggle-label {
+  display: none;
+}
 
-        /* Grid styles */
-  display: grid;
-  align-items: left;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
+header {
+    /* Grid styles */
+display: grid;
+align-items: left;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.logo {
+  grid-column: 2 / 3;
+}
+
+nav {
+  // all: unset; /* this causes issues with Edge, since it's unsupported */
+  
+  /* add Edge support */
+  position: relative;
+  text-align: left;
+  transition: none;
+  transform: scale(1,1);
+  background: none;
+  top: initial;
+  left: initial;
+  /* end Edge support stuff */
+  
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-left: 3em;
+  margin-bottom: 0;
+}
+
+nav a {
+  opacity: 1;
+  position: relative;
+}
     
-    .logo {
-      grid-column: 2 / 3;
-    }
-    
-    nav {
-      // all: unset; /* this causes issues with Edge, since it's unsupported */
-      
-      /* add Edge support */
-      position: relative;
-      text-align: left;
-      transition: none;
-      transform: scale(1,1);
-      background: none;
-      top: initial;
-      left: initial;
-      /* end Edge support stuff */
-      
-      grid-column: 3 / 4;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 4rem;
-    }
-    
-    nav ul {
-      display: flex;
-    }
-    
-    nav li {
-      margin-left: 3em;
-      margin-bottom: 0;
-    }
-    
-    nav a {
-      opacity: 1;
-      position: relative;
-    }
-    
-    nav a::before {
-      content: '';
-      display: block;
-      height: 5px;
-      background: black;
-      position: absolute;
-      top: -.75em;
-      left: 0;
-      right: 0;
-      transform: scale(0, 1);
-      transition: transform ease-in-out 250ms;
-    }
-    
-    nav a:hover::before {
-      transform: scale(1,1);
-    }
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: -.75em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  transform: scale(1,1);
+}
   }
   
-  
 
+.dropdown {
+    width: 100%;
+    left: -2rem;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: lightgray;
+    list-style: none;
+}
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
 /** paddings **/
 .pad {
     padding-left: 4rem;
@@ -312,7 +350,6 @@ header {
 
 .polygon {
     padding: 0rem 1rem 0rem 1rem;
-    border-right: 1px solid;
 
     flex: 1 1 auto;
     overflow-y: auto;
@@ -326,12 +363,14 @@ header {
     flex: 1 1 auto;
     overflow-y: auto;
     min-height: 100px;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 .title {
     font-size: 4rem;
     font-weight: 700;
-    color: white;
+    color: var(--dark);
 }
 
 .cards {
@@ -346,6 +385,8 @@ header {
     padding: 0.5rem;
     margin: 1rem 0.5rem;
     border-radius: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 .card-image {
@@ -376,7 +417,7 @@ main {
 .sticky  {
     position: sticky;
     bottom: 0;
-    background-color: #D3D3D3;
+    background-color: white;
     width: 100%;
     height: 4rem;
     /* Grid styles */
@@ -385,12 +426,14 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     column-gap: 1rem;
     z-index: 2;
+    border-top: 2px solid var(--dark);
 }
 
 .stickyText {
-  position: sticky;
-    left: 1rem;
+    position: sticky;
     top: 5rem;
+    float: right;
+    padding-right: 1rem;
 }
 
 .flex {
@@ -431,8 +474,16 @@ section {
         /* Grid styles */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
     grid-gap: 2rem;
+}
+
+.grid2 {
+  padding-top:8rem;
+  padding-bottom:8rem;
+      /* Grid styles */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
 
 .gridCards {
@@ -459,13 +510,13 @@ section {
 .oneColumn {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    background-color: #6C62FF;
     margin-top: 0;
     font-size: 4rem;
     padding-left: 4rem;
-    color: white;
+    color: var(--dark);
     font-weight: 600;
-    border-radius: 0 3rem 3rem 0;
+    border-right: 8px solid black;
+
 }
 
 .twoColumn {
@@ -475,6 +526,27 @@ section {
     grid-row: 1 / 2;
 }
 
+.text50 {
+  width:50%;
+  border-left: 4px solid var(--dark);
+  padding-left: 0.5rem
+}
+
+.imgGrid {
+  width:100%; 
+  padding: 0rem;
+  border-radius: 0.25rem;
+}
+
+.titleGrid {
+  margin-top:0;
+}
+
+.video-container-title {
+  margin-left: 16rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
 
 .long {
 
@@ -629,6 +701,21 @@ ul.breadcrumb {
     .card-title {
         font-size: 1rem;
     }
+    .text50 {
+      width: 100%;
+    }
+    .video-container-title {
+      margin-left: 0rem;
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    .stickyText {
+      position: sticky;
+      top: 5rem;
+      float: left;
+      padding-right: 0rem;
+  }
+
 }
 @media only screen and (max-width: 767px) {
     .pad {
@@ -650,6 +737,12 @@ ul.breadcrumb {
     nav {
         height: unset;
         min-height: 4rem;
+    }
+    .logo {
+      left: -8px;
+    }
+    .grid2 {
+      grid-template-columns: 1fr;
     }
 }
 
@@ -681,21 +774,18 @@ ul.breadcrumb {
 }
 
 .cirle {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
     display: inline-block;
 }
 
 .color-picker {
-    display: none;
 }
 
 .color {
-    background-color: black;
-    color: white;
-    border-left-color: white;
-    border-right-color: white;
+  color
+
 }
 
 .colorLight {
@@ -703,3 +793,4 @@ ul.breadcrumb {
     background-color:white;
     color: black;
 }
+

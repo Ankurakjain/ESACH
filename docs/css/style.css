@@ -21,7 +21,7 @@ html {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    background-color: white;
+    background-color: var(--light);
     background-image: radial-gradient(circle at 1px 1px, lightgrey 1px, transparent 0);
     background-size: 16px 16px;
     color: var(--dark);
@@ -69,7 +69,12 @@ h1 {
     font-size: 1.5rem;
 }
 
-button {
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
     border: 2px solid black;
     border-radius: 0;
     background-color: #282828;
@@ -77,6 +82,7 @@ button {
     margin-bottom: 1rem;
     margin-right: 1rem;
     color: var(--light);
+    padding: 0.75rem;
 }
 
 video {
@@ -97,7 +103,8 @@ video {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
 
 .video-container {
@@ -110,13 +117,13 @@ video {
 /* navigation styles start here */
 
 header {
-    background-color:var(--navbar);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 4rem;
-    border-bottom: 2px solid var(--dark);
+/*     box-shadow:  2px 4px rgba(62,62,62,0.2);
+    -webkit-box-shadow: 2px 4px rgba(62,62,62,0.2); */
   }
   
   .nav-toggle {
@@ -357,7 +364,7 @@ ul li ul li {
 }
 .polygonHome {
     padding: 0.5rem 1rem 1rem 1rem;
-    border-right: 2px solid;
+    border-right: 8px solid;
     z-index: 1;
     margin-bottom: 0.5rem;
     flex: 1 1 auto;
@@ -406,6 +413,11 @@ ul li ul li {
     padding: 1rem;
     background-color: white;
 
+}
+
+.news-article {
+  border-right: 1px solid var(--dark);
+  padding-right: 1rem;
 }
 /** general styling **/
 main {
@@ -481,10 +493,54 @@ section {
   padding-top:8rem;
   padding-bottom:8rem;
       /* Grid styles */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+      display: grid;
+      
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-gap: 1rem;
 }
+
+.grid-2elements{
+      padding: 4rem 2rem 4rem 2rem;
+      min-height: unset;
+      background-color: var(--dark);
+      color: var(--light);
+      /* Grid styles */
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-gap: 1rem;
+}
+
+.element-square {
+  position: relative;
+  margin: 2rem;
+  border-left: 8px solid var(--yellow);
+}
+
+.element-square-text {
+  color: var(--dark);
+  background-color: var(--light);
+  padding: 1rem;
+  width: 66%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.element-square-text > h2 {
+  font-size: 1.25rem;
+}
+
+.element-square-text > p {
+  font-size: 1rem;
+}
+
+.element-square-image {
+  width: 66%;
+  margin-bottom:-5px;
+}
+
 
 .gridCards {
     padding-top:8rem;
@@ -543,9 +599,8 @@ section {
 }
 
 .video-container-title {
-  margin-left: 16rem;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .long {
@@ -705,9 +760,8 @@ ul.breadcrumb {
       width: 100%;
     }
     .video-container-title {
-      margin-left: 0rem;
       font-size: 1rem;
-      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     .stickyText {
       position: sticky;
@@ -715,6 +769,11 @@ ul.breadcrumb {
       float: left;
       padding-right: 0rem;
   }
+  .element-square {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
 
 }
 @media only screen and (max-width: 767px) {
@@ -732,7 +791,7 @@ ul.breadcrumb {
         display: none;
     }
     .sticky {
-        height: 2rem;
+        height: 3rem;
     }
     nav {
         height: unset;
@@ -744,6 +803,7 @@ ul.breadcrumb {
     .grid2 {
       grid-template-columns: 1fr;
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -752,8 +812,16 @@ ul.breadcrumb {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 991px) {
+  .element-square-image {
+    width: 100%;
+  }
 
+  .element-square-text{
+    width: 100%;
+    transform: none;
+    position: relative;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -771,7 +839,9 @@ ul.breadcrumb {
     top:50%;
     padding-left: 0.5rem;
     width: 2.5rem;
+    display: none;
 }
+
 
 .cirle {
     height: 32px;
@@ -793,4 +863,3 @@ ul.breadcrumb {
     background-color:white;
     color: black;
 }
-

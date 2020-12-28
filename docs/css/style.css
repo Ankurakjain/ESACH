@@ -409,9 +409,8 @@ ul li ul li {
 }
 
 .borderBold {
-    border-left: 8px solid #6C62FF;
+    border-left: 8px solid var(--yellow);
     padding: 1rem;
-    background-color: white;
 
 }
 
@@ -672,6 +671,11 @@ grid-gap: 1rem;
 
 .center {
     margin: 0 auto;
+}
+
+.img-network {
+  width: 100%;
+  border: 8px solid var(--yellow);
 }
 
 /** footer **/

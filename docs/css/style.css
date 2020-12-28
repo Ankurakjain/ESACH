@@ -349,11 +349,6 @@ ul li ul li {
     border-left: 8px solid;
 }
 
-.elementFull{
-    grid-column-start: 1;
-    grid-column-end: 1;
-
-}
 
 .polygon {
     padding: 0rem 1rem 0rem 1rem;
@@ -399,7 +394,7 @@ ul li ul li {
  }
 
 .card {
-    flex: 1 0 320px;
+    flex: 0 0 320px;
     box-sizing: border-box;
     padding: 0.5rem;
     margin: 1rem 0.5rem;

@@ -329,6 +329,10 @@ ul li ul li {
 
 /** stuff **/
 .element {
+  -webkit-transform: translate(50px, -100px);
+  -moz-transform:    translate(50px, -100px);
+  -ms-transform:     translate(50px, -100px);
+  -o-transform:      translate(50px, -100px);
     transform: translate(50px, -100px);
     position: relative;
     height: 200px;
@@ -482,9 +486,6 @@ section {
     overflow-y: auto;
 }
 .hero {
-  /* Photo by mnm.all on Unsplash */
-  background-color: lightgrey;
-
   /* Grid styles */
   display: grid;
   align-items: center;

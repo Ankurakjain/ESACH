@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="pad" id="header">
+        <h1 class="logo"><img src="img/logo.png" alt="Logo" height="32px"></h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item"><a href="news.html">News</a>
+                    <!--                     <ul class="dropdown" id="navbarNews">
+                        <li><a href="#">Sub-1</a></li>
+                        <li><a href="#">Sub-2</a></li>
+                      </ul> -->
+                </li>
+                <li class="navbar-item"><a href="about.html">About</a>
+                    <!--                         <ul class="dropdown" id="navbarAbout">
+                            <li><a href="#">Sub-1</a></li>
+                            <li><a href="#">Sub-2</a></li>
+                          </ul> -->
+                </li>
+                <li class="navbar-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <!-- test -->
+    </header>
+    <div class="color-changer">
+        <div>
+            <button class="cirle black" onclick="myFunction()">X</button>
+        </div>
+        <div class="color-picker" id="color-picker">
+            <button class="cirle black" onclick="changeColorDark()"></button>
+            <button class="cirle purple" onclick="changeColorPurple()"></button>
+            <button class="cirle yellow" onclick="changeColorYellow()"></button>
+            <button class="cirle green" onclick="changeColorGreen()"></button>
+        </div>
+    </div>
+    <main class="">
+        <section class="pad color grid3" id="network">
+            <div class="element1" style="text-align: right; font-size: 3rem">
+                <div class="stickyText" style="position: sticky; top: 4rem;">Supporting Institutions & Partners</div>
+            </div>
+            <div class="element2 no-border">
+                <article class="network-article">
+                    <h1 title="titleGrid">Contacts</h1>
+                    <p class="">Write us an email to the External Communication & Partners representative</p>
+                </article>
+                <article class="network-article">
+                    <h1 title="titleGrid">Universities that have organized an ESACH
+                        Meeting</h1>
+                    <p class="">Universitat de Girona is a Catalan institution founded in 1446,
+                        reconstituted in 1991 (www.udg.edu)</p>
+                    <p>University of Genova is an Italian institution founded in 1481.
+                        (www.unige.it)</p>
+                    <p>The Complutense University of Madrid is a Spanish Institution founded in
+                        1499 (www.ucm.es)</p>
+                </article>
+                <article class="network-article">
+                    <h1 title="titleGrid">Partners</h1>
+                    <p class="">Europa Nostra – It is the leading pan-European Federation of NGOs active
+                        for more than 50 yrs in over 40 countries. It is recognized as the most representative heritage
+                        network in Europe and the voice of civil society committed to safeguarding and promoting
+                        Europa's cultural heritage. It contributes to the development of heritage-related policies and
+                        strategies in Europe, celebrates excellence and promotes best practices through the European
+                        Heritage Awards / Europa Nostra Awards.</p>
+                </article>
+                <article class="network-article">
+                    <h1 title="titleGrid">Supporting Institutions</h1>
+                    <p class="grid-mono-text">The German National Committee of ICOMOS is a international
+                        non-governmental heritage organization.</p>
+                    <p class="grid-mono-text">The German Cultural Heritage Committee, the most
+                        important German organizations in the field of monument protection and conservation are
+                        assembled.</p>
+                    <p class="grid-mono-text">The Santander Art and Culture Law Review is a bi-annual journal.</p>
+                    <p class="grid-mono-text">Mazu Press is a
+                        publishing company newly established in Portugal.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div class="faq pad">
+        <div class="center">
+            <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">
+        </div>
+        <div class="">
+            <h3>Click here if don't find what you are looking for</h3>
+            <button href="faq.html">FAQ</button>
+        </div>
+    </div>
+    <div class="sticky pad">
+        <div class=" flex">
+            <div>
+                <img src="img/facebook.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/youtube.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/twitter.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/linkedin.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+        </div>
+        <div class="none ">
+            <ul class="breadcrumb">
+                <li><a href="index.html">easach.org</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="network.html">network</a></li>
+                <li><a href="supporting-institutes.html">supporting institutes</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="pad">
+        <div class="menu-footer">
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">About us</h3>
+                <img src="img/logo-white.png" alt="Logo white " style="margin-top: 1rem;" height="24px">
+                <p>Our main objective is the interdisciplinary
+                    collaboration among European University Students</p>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Discover us</h3>
+                <ul>
+                    <li class=""><a href="index.html">News</a></li>
+                    <li class=""><a href="index.html">Publications</a></li>
+                    <li class=""><a href="index.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Contact us</h3>
+                <ul>
+                    <li class=""><a href="index.html">Join us</a></li>
+                    <li class=""><a href="index.html">+49 123 1234345</a></li>
+                    <li class=""><a href="index.html">e-mail</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Legal</h3>
+                <ul>
+                    <li class=""><a href="index.html">Privacy & Policy</a></li>
+                    <li class=""><a href="index.html">Terms & Conditions</a></li>
+                    <li class=""><a href="index.html">Imprint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright 2020, Esach
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="pad" id="header">
+        <h1 class="logo"><img src="img/logo.png" alt="Logo" height="32px"></h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item" ><a href="news.html">News</a>
+<!--                     <ul class="dropdown" id="navbarNews">
+                        <li><a href="#">Sub-1</a></li>
+                        <li><a href="#">Sub-2</a></li>
+                      </ul> -->
+                </li>
+                <li class="navbar-item"><a href="about.html">About</a>
+<!--                         <ul class="dropdown" id="navbarAbout">
+                            <li><a href="#">Sub-1</a></li>
+                            <li><a href="#">Sub-2</a></li>
+                          </ul> -->
+                </li>
+                <li class="navbar-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <!-- test -->
+    </header>
+    <div class="color-changer">
+        <div>
+            <button class="cirle black" onclick="myFunction()">X</button>
+        </div>
+        <div class="color-picker" id="color-picker">
+            <button class="cirle black" onclick="changeColorDark()"></button>
+            <button class="cirle purple" onclick="changeColorPurple()"></button>
+            <button class="cirle yellow" onclick="changeColorYellow()"></button>
+            <button class="cirle green" onclick="changeColorGreen()"></button>
+        </div>
+    </div>
+    <main class="">
+        <video autoplay muted loop id="myVideo" class="">
+            <source src="img/The-Crosswalk.mp4" type="video/mp4">
+        </video>
+        <section class="pad hero" id="home">
+            <div></div>
+            <article class="polygonHome color">
+                <h1>ESACH News</h1>
+                <p>It is an inter-university cross-border network whose main objective is the interdisciplinary
+                    collaboration among European University Students, alumni and also young professionals in the field
+                    of Cultural Heritage.</p>
+                <a class="button" href="events.html">Events</a>
+                <a class="button" href="publications.html">Publications</a>
+            </article>
+        </section>
+        <section class="pad color grid3" id="news">
+            <div class="element1">
+                <div class="stickyText" style="position: sticky; top: 4rem;">News</div>
+            </div>
+            <div class="element2 no-border">
+                <article class="news-article">
+                    <div class="video-container-title">
+                        <h3>Berlin Cultural Heritage Summit 2018</h3>
+                        <p>ESACH Message at the high-level Policy Debate during the event</p>
+                    </div>
+                    <div class="video-container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/kotDM3YnzdU"></iframe>
+                    </div>
+                </article>
+                <article class="news-article">
+                    <div class="video-container-title">
+                        <h3>Höstmöte 2018</h3>
+                        <p>Sara Sabatini, MA in Art History and Artistic Heritage Management</p>
+                    </div>
+                    <div class="video-container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JHnQK1Dhww0"></iframe>
+                    </div>
+                </article>
+            </div>
+            <div></div>
+
+        </section>
+        <section class="grid-2elements">
+            <div class="element-square">
+                <img class="element-square-image" src="img/events.jpg">
+                <div class="element-square-text">
+                    <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a href="events.html" class="button">Events</a>
+                </div>
+
+            </div>
+            <div class="element-square">
+                <img class="element-square-image" src="img/publications.jpg">
+                <div class="element-square-text">
+                    <h2>Publications</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a href="publications.html" class="button">Publications</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="faq pad">
+        <div class="center">
+            <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">
+        </div>
+        <div class="">
+            <h3>Click here if don't find what you are looking for</h3>
+            <a href="faq.html" class="button">FAQ</a>
+        </div>
+    </div>
+    <div class="sticky pad">
+        <div class=" flex">
+            <div>
+                <img src="img/facebook.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/youtube.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/twitter.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/linkedin.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+        </div>
+        <div class="none ">
+            <ul class="breadcrumb">
+                <li><a href="index.html">easach.org</a></li>
+                <li><a href="news.html">news</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="pad">
+        <div class="menu-footer">
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">About us</h3>
+                <img src="img/logo-white.png" alt="Logo white " style="margin-top: 1rem;" height="24px">
+                <p>Our main objective is the interdisciplinary
+                    collaboration among European University Students</p>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Discover us</h3>
+                <ul>
+                    <li class=""><a href="index.html">News</a></li>
+                    <li class=""><a href="index.html">Publications</a></li>
+                    <li class=""><a href="index.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Contact us</h3>
+                <ul>
+                    <li class=""><a href="index.html">Join us</a></li>
+                    <li class=""><a href="index.html">+49 123 1234345</a></li>
+                    <li class=""><a href="index.html">e-mail</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Legal</h3>
+                <ul>
+                    <li class=""><a href="index.html">Privacy & Policy</a></li>
+                    <li class=""><a href="index.html">Terms & Conditions</a></li>
+                    <li class=""><a href="index.html">Imprint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright 2020, Esach
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="pad" id="header">
+        <h1 class="logo"><img src="img/logo.png" alt="Logo" height="32px"></h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+            <ul>
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item"><a href="news.html">News</a>
+                    <!--                     <ul class="dropdown" id="navbarNews">
+                        <li><a href="#">Sub-1</a></li>
+                        <li><a href="#">Sub-2</a></li>
+                      </ul> -->
+                </li>
+                <li class="navbar-item"><a href="about.html">About</a>
+                    <!--                         <ul class="dropdown" id="navbarAbout">
+                            <li><a href="#">Sub-1</a></li>
+                            <li><a href="#">Sub-2</a></li>
+                          </ul> -->
+                </li>
+                <li class="navbar-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <!-- test -->
+    </header>
+    <div class="color-changer">
+        <div>
+            <button class="cirle black" onclick="myFunction()">X</button>
+        </div>
+        <div class="color-picker" id="color-picker">
+            <button class="cirle black" onclick="changeColorDark()"></button>
+            <button class="cirle purple" onclick="changeColorPurple()"></button>
+            <button class="cirle yellow" onclick="changeColorYellow()"></button>
+            <button class="cirle green" onclick="changeColorGreen()"></button>
+        </div>
+    </div>
+    <main class="">
+        <section class="pad color grid3" id="faq">
+            <div class="element1">
+                <div class="stickyText" style="position: sticky; top: 4rem;">Faq</div>
+            </div>
+            <div class="element2 no-border">
+                <article class="grid-mono-article">
+                    <h2 class="grid-mono-title">What is ESACH?</h2>
+                    <p class="grid-mono-text">It is an inter-University cross-border network whose main objective is to
+                        collaborate among the
+                        European university students in the field of Cultural Heritage. ESACH was born in 2017 at the
+                        University of Passau motivated by the celebration of the European Year of Cultural Heritage 2018
+                        with the aim of becoming a meeting and exchange place for new generations of heritage field. A place
+                        to take the first steps between studies and the professional world, where you can meet people with
+                        your same interests and start getting involved with civil and professional associations, governments
+                        and other public and private agents of the European Cultural Heritage.</p>
+                </article>
+                <article class="grid-mono-article">
+                    <h2 class="grid-mono-title">Who is Behind ESACH?</h2>
+                    <p class="grid-mono-text">With the support of the participant universities, ESACH moves thank to the
+                        students and young professionals that are part of each group. The people who are a part of this
+                        coordination committee is the main organism that rules the network and works together with the
+                        groups to provide the proper cover to their activities. They manage the representation, PR, internal
+                        communication, publications, international meeting, financial issues and coordination between all
+                        the members in a European Level.</p>
+                </article>
+                <article class="grid-mono-article">
+                    <h2 class="grid-mono-title">What About the Language?</h2>
+                    <p class="grid-mono-text">The official language of our European network continuous being English.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div class="sticky pad">
+        <div class=" flex">
+            <div>
+                <img src="img/facebook.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/youtube.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/twitter.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+            <div>
+                <img src="img/linkedin.svg" alt="Logo Twitter" style="height: 1rem">
+            </div>
+        </div>
+        <div class="none ">
+            <ul class="breadcrumb">
+                <li><a href="index.html">easach.org</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="pad">
+        <div class="menu-footer">
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">About us</h3>
+                <img src="img/logo-white.png" alt="Logo white " style="margin-top: 1rem;" height="24px">
+                <p>Our main objective is the interdisciplinary
+                    collaboration among European University Students</p>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Discover us</h3>
+                <ul>
+                    <li class=""><a href="index.html">News</a></li>
+                    <li class=""><a href="index.html">Publications</a></li>
+                    <li class=""><a href="index.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Contact us</h3>
+                <ul>
+                    <li class=""><a href="index.html">Join us</a></li>
+                    <li class=""><a href="index.html">+49 123 1234345</a></li>
+                    <li class=""><a href="index.html">e-mail</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer-item">
+                <h3 style="margin-bottom: 0;">Legal</h3>
+                <ul>
+                    <li class=""><a href="index.html">Privacy & Policy</a></li>
+                    <li class=""><a href="index.html">Terms & Conditions</a></li>
+                    <li class=""><a href="index.html">Imprint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright 2020, Esach
+        </div>
+    </footer>
+</body>
+
+</html>

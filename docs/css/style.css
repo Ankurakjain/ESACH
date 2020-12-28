@@ -374,6 +374,18 @@ ul li ul li {
     color: var(--light);
 }
 
+.polygonDonate {
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 8px solid var(--yellow);
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 100px;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
 .title {
     font-size: 4rem;
     font-weight: 700;
@@ -382,12 +394,12 @@ ul li ul li {
 
 .cards {
     display: flex;
-    justify-content: space-between;
-    overflow-y: hidden;
+    flex-wrap: wrap;
+
  }
 
 .card {
-    flex: 1 0 240px;
+    flex: 1 0 320px;
     box-sizing: border-box;
     padding: 0.5rem;
     margin: 1rem 0.5rem;
@@ -415,8 +427,13 @@ ul li ul li {
 }
 
 .news-article {
-  border-right: 1px solid var(--dark);
+  border-left: 8px solid var(--yellow);
   padding-right: 1rem;
+}
+.network-article {
+  border-left: 8px solid var(--yellow);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
 }
 /** general styling **/
 main {
@@ -775,6 +792,7 @@ ul.breadcrumb {
     .element1{
         grid-column-start: 1;
         grid-column-end: 1;
+        font-size: 2.5rem;
     }
     .element2{
         grid-column-start: 1;
@@ -798,7 +816,7 @@ ul.breadcrumb {
         padding-top:4rem;
     }
     .card {
-        flex: 0 0 200px;
+    flex: 0 0 240px;
     box-sizing: border-box;
     padding: 0.5rem;
     margin: 1rem 0.5rem;

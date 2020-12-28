@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/main.js"></script>
@@ -17,14 +18,14 @@
         <nav>
             <ul>
                 <li class="navbar-item"><a href="index.html">Home</a></li>
-                <li class="navbar-item" ><a href="news.html">News</a>
-<!--                     <ul class="dropdown" id="navbarNews">
+                <li class="navbar-item"><a href="news.html">News</a>
+                    <!--                     <ul class="dropdown" id="navbarNews">
                         <li><a href="#">Sub-1</a></li>
                         <li><a href="#">Sub-2</a></li>
                       </ul> -->
                 </li>
                 <li class="navbar-item"><a href="about.html">About</a>
-<!--                         <ul class="dropdown" id="navbarAbout">
+                    <!--                         <ul class="dropdown" id="navbarAbout">
                             <li><a href="#">Sub-1</a></li>
                             <li><a href="#">Sub-2</a></li>
                           </ul> -->
@@ -49,15 +50,41 @@
         </div>
     </div>
     <main class="">
-
+        <video autoplay muted loop id="myVideo" class="">
+            <source src="img/The-Crosswalk.mp4" type="video/mp4">
+        </video>
+        <section class="pad hero" id="home">
+            <div></div>
+            <article class="polygonHome color">
+                <h1>About us</h1>
+                <p>It is a youth-led network that includes undergraduates and graduate university students, PhD
+                    candidates, early career researchers and young professionals with an interest in cultural heritage
+                    studies.</p>
+                <a class="button" href="#news">Goal</a>
+                <a class="button" href="network.html">Network</a>
+            </article>
+        </section>
+        <section class="pad red grid3 bold" id="mission">
+            <img src="img/target.svg" alt="Logo Twitter" style="width:100%; padding:1rem">
+            <article class="borderBold colorLight">
+                <h1 style="font-size: 3rem">GOAL</h1>
+                <p>The aim of ESACH is to establish an interdisciplinary network of university students, from
+                    undergraduates to postgraduate levels, young researchers and early-career professionals working in
+                    cultural heritage within Europe.</p>
+                <p>The development of this network will increase youth participation
+                    in heritage practice, contribute towards a more cohesive heritage practice in Europe and provide
+                    members with valuable inter-disciplinary knowledge which will prepare them for work in the
+                    challenging field of cultural heritage study, conservation and protection.</p>
+            </article>
+        </section>
     </main>
     <div class="faq pad">
         <div class="center">
-            <img src="img/faq.svg" alt="Logo Twitter" style="height: 10rem">
+            <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">
         </div>
         <div class="">
             <h3>Click here if don't find what you are looking for</h3>
-            <button href="faq.html">FAQ</button>
+            <a href="faq.html" class="button">FAQ</a>
         </div>
     </div>
     <div class="sticky pad">
@@ -77,8 +104,8 @@
         </div>
         <div class="none ">
             <ul class="breadcrumb">
-                <li><a href="#">easach.org</a></li>
-                <li><a href="#">home</a></li>
+                <li><a href="index.html">easach.org</a></li>
+                <li><a href="about.html">about</a></li>
             </ul>
         </div>
     </div>

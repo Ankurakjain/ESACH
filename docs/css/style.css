@@ -119,7 +119,7 @@ video {
 header {
     text-align: center;
     position: fixed;
-    z-index: 999;
+    z-index: 3;
     width: 100%;
     height: 4rem;
 /*     box-shadow:  2px 4px rgba(62,62,62,0.2);
@@ -218,8 +218,10 @@ header {
   }
 
   .logo {
-      position: relative;
-      text-align: left;
+    left: 2rem;
+    top: 1rem;
+    position: absolute;
+    z-index: 4;
   }
   
 @media screen and (min-width: 800px) {
@@ -861,9 +863,6 @@ ul.breadcrumb {
     nav {
         height: unset;
         min-height: 4rem;
-    }
-    .logo {
-      left: -8px;
     }
     .grid2 {
       grid-template-columns: 1fr;

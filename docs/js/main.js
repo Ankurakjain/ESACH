@@ -24,14 +24,14 @@ window.onscroll = function() {
 };
 
 function scrollWin() {
-  var el= document.getElementById('header');
+  var el = document.getElementById('header');
   if (window.pageYOffset > 10){   
-  el.style.backgroundColor='#f5f5f5';
-  el.style.borderBottom="2px solid #2b2b2b";
+    el.style.backgroundColor='#f5f5f5';
+    el.style.borderBottom="2px solid #2b2b2b";
   } else {   
-  el.style.backgroundColor='transparent';
-  el.style.borderBottom="none";
-}
+    el.style.backgroundColor='transparent';
+    el.style.borderBottom="none";
+  }
 };
 
 

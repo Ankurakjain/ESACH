@@ -1,7 +1,7 @@
 var changHeaderColor = function () {
-  var el = document.getElementById('header');
   if (window.pageYOffset == 0) {
-    if (el.style.backgroundColor == 'transparent') {
+    var el = document.getElementById('header');
+    if (el.style.backgroundColor == 'transparent' || el.style.backgroundColor == null) {
       el.style.backgroundColor='#f5f5f5';
       el.style.borderBottom="2px solid #2b2b2b";
     } else {
@@ -12,6 +12,7 @@ var changHeaderColor = function () {
 };
 
 window.onload = function() {
+  document.getElementById('header').style.backgroundColor = 'transparent';
   var toggle = document.getElementById("nav-menu-button");
   toggle.addEventListener("click", changHeaderColor, false);
 }

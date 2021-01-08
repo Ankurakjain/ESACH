@@ -1,21 +1,40 @@
+var changHeaderColor = function () {
+  var el = document.getElementById('header');
+  if (window.pageYOffset == 0) {
+    if (el.style.backgroundColor == 'transparent') {
+      el.style.backgroundColor='#f5f5f5';
+      el.style.borderBottom="2px solid #2b2b2b";
+    } else {
+      el.style.backgroundColor='transparent';
+      el.style.borderBottom="none";
+    }
+  }
+};
+
+window.onload = function() {
+  var toggle = document.getElementById("nav-menu-button");
+  toggle.addEventListener("click", changHeaderColor, false);
+}
+
+
+
 window.onscroll = function() {
   scrollWin()
 };
 
 function scrollWin() {
-  //window.scrollTo(500, 0);
-
-//alert('window.pageXOffset= '+window.pageXOffset + '\nwindow.pageYOffset='+ window.pageYOffset);
-
-var el= document.getElementById('header');
-if(window.pageYOffset > 10){   
-el.style.backgroundColor='#f5f5f5';
-el.style.borderBottom="2px solid #2b2b2b"
-} else {   
-el.style.backgroundColor='transparent';
-el.style.borderBottom="none";
+  var el= document.getElementById('header');
+  if (window.pageYOffset > 10){   
+  el.style.backgroundColor='#f5f5f5';
+  el.style.borderBottom="2px solid #2b2b2b";
+  } else {   
+  el.style.backgroundColor='transparent';
+  el.style.borderBottom="none";
 }
-}
+};
+
+
+
 function myFunction() {
   var x = document.getElementById("color-picker");
   if (x.style.display === "none") {

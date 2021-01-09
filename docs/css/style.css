@@ -41,7 +41,7 @@ html {
 }
 
 .yellow {
-    background-color: #F3AF51;
+  color: var(--yellow);
 }
 
 .green {
@@ -279,6 +279,11 @@ font-size: 3rem;
 .smallTextHomepage {
   font-size: 2rem; 
   font-weight: 500; 
+}
+
+.contactHero {
+  background-image: url(../img/heritage.jpg);
+  background-position: center;
 }
   
 @media screen and (min-width: 800px) {

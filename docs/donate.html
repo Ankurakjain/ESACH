@@ -43,29 +43,50 @@
             <span></span>
         </label>
     </header>
+
+
     <main class="">
         <video autoplay muted loop id="myVideo" class="">
             <source src="img/The-Crosswalk.mp4" type="video/mp4">
         </video>
+
         <section class="pad hero" id="donate">
-            <div></div>
-            <article class="polygonDonate color">
-                <h1>Donate</h1>
-                <p>Your donation could help us and the whole network to keep working and discovering. We thank you for your consideration.</p>
-                <form>
-                    <h2>Choose periodicity</h2>
-                    <input type="radio" id="male" name="gender" value="monthly">
-                    <label for="male">Monthly</label><br>
-                    <input type="radio" id="female" name="gender" value="one time">
-                    <label for="female">One Time</label><br>
+            <section class="pad hero" id="donate">
+                <div></div>
+                <article class="polygonDonate color">
+                    <h1>Donate</h1>
+                    <p>Your donation could help us and the whole network to keep working and discovering. We thank you for your consideration.</p>
+                    <h2>Choose periodity</h2>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="period" value="Monthly">Monthly
+                            <div class="radio-control monthly"></div>
+                        </label>
+                        <label>
+                            <input type="radio" name="period" value="One_time">One time
+                            <div class="radio-control monthly"></div>
+                        </label>
+                    </div>
+
                     <h2>Choose amount</h2>
-                    <label for="lname">Donation amount:</label><br>
-                    <input type="text" id="donationAmount" name="donationAmount" value=""><br><br>
-                    <input type="submit" value="Donate">
-                </form>
-            </article>
-        </section>
+
+
+                    <div style="margin: 20px auto;">
+                        <label for="amount">Donation amount:</label>
+                        <input type="amount" name="amount" required>
+                    </div>
+
+                    <a class="button" href="mailto: abc@example.com">Donate now</a>
+                </article>
+                <h2>Choose payment</h2>
+
+
+            </section>
     </main>
+
+
+
     <div class="faq pad">
         <div class="center">
             <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">

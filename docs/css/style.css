@@ -76,6 +76,14 @@ a.button {
     font-size: 1.25rem;
     color: var(--light);
     padding: 0.5rem 1rem 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+a.button:hover {
+  background-color: var(--light);
+  color: var(--dark);
+  border: 2px solid var(--yellow);
 }
 
 video {
@@ -222,6 +230,56 @@ header {
 .dropdown {
   margin-top: 1rem;
 }
+
+/* color picket for test */
+
+.colorLight {
+  border-left-color: black;
+  background-color: white;
+  color: black;
+}
+
+.shadow {
+-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+-moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+.link-wrapper {
+margin-bottom: 1.5rem;
+margin-top: 1rem;
+}
+
+.link-wrapper > a:hover {
+background-color: var(--light);
+color: var(--dark);
+border: 2px solid var(--yellow);
+}
+
+.icon-sub-menu {
+position: absolute;
+margin-top: -0.5rem;
+}
+
+.small-image {
+width: 66%;
+text-align: center;
+padding: 1rem;
+}
+
+.leftPad {
+padding-left: 1rem;
+}
+
+.smallTitle {
+font-size: 3rem;
+}
+
+.smallTextHomepage {
+  font-size: 2rem; 
+  font-weight: 500; 
+}
   
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
@@ -338,7 +396,7 @@ header {
 .element1 {
     grid-column-start: 1;
     grid-column-end: 2;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     position: relative;
 }
@@ -348,6 +406,23 @@ header {
     grid-column-end: 4;
     border-left: 8px solid;
 }
+
+.element3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.element4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-left: 8px solid var(--yellow);
+}
+
+.alignRightLeft {
+  text-align: right;
+}
+
+
 
 
 .polygon {
@@ -494,7 +569,7 @@ section {
         /* Grid styles */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 1rem;
 }
 .grid2 {
   padding-top:8rem;
@@ -539,7 +614,7 @@ section {
 .element-square-text {
   color: var(--dark);
   background-color: var(--light);
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   width: 66%;
   position: absolute;
   top: 50%;
@@ -790,6 +865,14 @@ ul.breadcrumb {
         grid-column-start: 1;
         grid-column-end: 1;
     }
+    .element3{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+    .element4{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
     .title {
         font-size: 2rem;
         font-weight: 700;
@@ -806,6 +889,7 @@ ul.breadcrumb {
     }
     .grid3 {
         padding-top:4rem;
+        padding-bottom:4rem ;
     }
     .card {
     flex: 0 0 240px;
@@ -880,7 +964,15 @@ ul.breadcrumb {
     a.button {
       font-size:1rem;
     }
-
+    .smallTitle {
+      font-size: 2rem;
+    }
+    .smallTextHomepage {
+      font-size: 1.5rem; 
+    }
+    .alignRightLeft {
+      text-align: left;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -906,56 +998,3 @@ ul.breadcrumb {
 
 }  
 
-
-/* color picket for test */
-
-.color-changer {
-    position: fixed;
-    left: 0;
-    z-index: 10000;
-    top:50%;
-    padding-left: 0.5rem;
-    width: 2.5rem;
-    display: none;
-}
-
-
-.cirle {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.color-picker {
-}
-
-
-.colorLight {
-    border-left-color: black;
-    background-color: white;
-    color: black;
-}
-
-.shadow {
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-}
-
-
-.link-wrapper {
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
-}
-
-.link-wrapper > a:hover {
-  background-color: var(--light);
-  color: var(--dark);
-  border: 2px solid var(--yellow);
-}
-
-.icon-sub-menu {
-  position: absolute;
-  margin-top: -0.5rem;
-}

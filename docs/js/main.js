@@ -11,13 +11,6 @@ var changHeaderColor = function () {
   }
 };
 
-window.onload = function() {
-  document.getElementById('header').style.backgroundColor = 'transparent';
-  var toggle = document.getElementById("nav-menu-button");
-  toggle.addEventListener("click", changHeaderColor, false);
-}
-
-
 
 window.onscroll = function() {
   scrollWin()
@@ -35,8 +28,15 @@ function scrollWin() {
 };
 
 
+window.onload = function() {
+  document.getElementById('header').style.backgroundColor = 'transparent';
+  var toggle = document.getElementById("nav-menu-button");
+  toggle.addEventListener("click", changHeaderColor, false);
+  scrollWin()
+}
 
-function myFunction() {
+
+/* function myFunction() {
   var x = document.getElementById("color-picker");
   if (x.style.display === "none") {
       x.style.display = "block";
@@ -75,4 +75,4 @@ function changeColorGreen() {
   for (i = 0; i < x.length; i++) {
     x[i].style.backgroundColor = "#CCE7E7";
   }
-}
+} */

@@ -284,6 +284,8 @@ font-size: 3rem;
 .contactHero {
   background-image: url(../img/heritage.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
   
 @media screen and (min-width: 800px) {
@@ -850,6 +852,21 @@ ul.breadcrumb {
   ul.breadcrumb li a:hover {
 
   }
+  .element-half-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: var(--light);
+    border: 8px solid var(--yellow);
+    padding: 1rem;
+  }
+  .element-half-right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--light);
+    border: 8px solid var(--yellow);
+    padding: 1rem;
+  }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 599px) {
@@ -875,6 +892,14 @@ ul.breadcrumb {
       grid-column-end: 1;
     }
     .element4{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+    .element-half-left {
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+    .element-half-right {
       grid-column-start: 1;
       grid-column-end: 1;
     }
@@ -978,6 +1003,7 @@ ul.breadcrumb {
     .alignRightLeft {
       text-align: left;
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

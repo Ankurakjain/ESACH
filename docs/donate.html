@@ -50,9 +50,19 @@
         <section class="pad hero" id="donate">
             <div></div>
             <article class="polygonDonate color">
-                <h1>Donate</h1>
-                <p>Your donation could help us and the whole network to keep working and discovering. We thank you for your consideration.</p>
-                <a class="button" href="mailto: abc@example.com">Donate now</a>
+                <form>
+                    <h2>Donate</h2>
+                    <p>Your donation could help us and the whole network to keep working and discovering. We thank you for your consideration.</p>
+                    <h2>Choose periodicity</h2>
+                    <input type="radio" id="male" name="gender" value="monthly">
+                    <label for="male">Monthly</label><br>
+                    <input type="radio" id="female" name="gender" value="one time">
+                    <label for="female">One Time</label><br>
+                    <h2>Choose amount</h2>
+                    <label for="lname">Donation amount:</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br><br>
+                    <input type="submit" value="Donate">
+                </form>
             </article>
         </section>
     </main>

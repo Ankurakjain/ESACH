@@ -575,6 +575,10 @@ section.hero {
   margin-top: 0;
 }
 
+.img-publication {
+  width: 100%;
+}
+
 .video-container-title {
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -850,9 +854,6 @@ ul.breadcrumb li a {
   }
   .hero {
     align-items: start;
-  }
-  .img-publication {
-    width: 100%;
   }
 }
 

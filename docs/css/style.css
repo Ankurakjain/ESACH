@@ -278,9 +278,10 @@ font-size: 3rem;
   font-weight: 500; 
 }
 
-.contactHero {
+.contact-hero {
   background-image: url(../img/heritage.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -551,9 +552,12 @@ main {
 
 /** sections **/
 section {
-    width: 100%;
-    min-height: 100vh;
-    
+    width: 100%;  
+}
+
+section.hero {
+  width: 100%;
+  min-height: 100vh;  
 }
 
 .parallax {
@@ -945,7 +949,7 @@ ul.breadcrumb {
     margin: 0rem;
     padding: 0rem;
   }
-  .contactHero { 
+  .contact-hero { 
     background-attachment: initial;
   }
 

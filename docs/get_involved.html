@@ -44,29 +44,59 @@
             <span></span>
         </label>
     </header>
+
+
     <main class="">
         <video autoplay muted loop id="myVideo" class="">
             <source src="img/The-Crosswalk.mp4" type="video/mp4">
         </video>
+
         <section class="pad hero" id="getInvolved">
             <div></div>
             <article class="polygonDonate color">
                 <h1>Get Involved</h1>
                 <p>If you want to collaborate or be part of a great networks of don't esitate to contact us. We are
                     always welcome to let new people part of our project.</p>
-                <form>
-                    <h2>Tell us who you are</h2>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" value=""><br><br>
-                    <label for="surname">Surname</label><br>
-                    <input type="text" id="surname" name="surname" value=""><br><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email" value=""><br><br>
-                    <input type="submit" value="Collaborate">
-                </form>
+
+
+                <div class="form-join">
+                    <div class="profile"><img src="img/placeholderMale_small.jpg">
+                        <a class="button2" href="mailto: abc@example.com">Upload photo</a>
+                    </div>
+                   <form method="post">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="radio">
+                            <span>Gender</span>
+                            <label>
+                                <input type="radio" name="sex" value="men">men
+                                <div class="radio-control male"></div>
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="women">women
+                                <div class="radio-control female"></div>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" required>
+                        </div>
+                       <div>
+                           <label for="Notes">Notes</label>
+                           <input type="text" name="notes">
+                       </div>
+
+                       <a class="button" href="mailto: abc@example.com">Submit</a>
+                    </form>
+                </div>
             </article>
         </section>
     </main>
+
     <div class="faq pad">
         <div class="center">
             <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">

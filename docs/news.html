@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
+    <title>ESACH News</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,21 +18,21 @@
         <nav id="nav">
             <ul>
                 <li class="navbar-item"><a href="index.html">Home</a></li>
-                <li class="navbar-item"><a href="news.html">News<img class="icon-sub-menu none"
-                            src="img/arrow.svg" /></a>
+                <li class="navbar-item"><a href="news.html">News
+                        <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu news" /></a>
                     <ul class="dropdown" id="navbarNews">
                         <li><a href="events.html">Events</a></li>
                         <li><a href="publications.html">Publications</a></li>
                     </ul>
                 </li>
-                <li class="navbar-item"><a href="about.html">About<img class="icon-sub-menu none"
-                            src="img/arrow.svg" /></a>
+                <li class="navbar-item"><a href="about.html">About
+                        <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu about" /></a>
                     <ul class="dropdown" id="navbarAbout">
                         <li><a href="network.html">Network</a></li>
                     </ul>
                 </li>
-                <li class="navbar-item"><a href="contact.html">Contact<img class="icon-sub-menu none"
-                            src="img/arrow.svg" /></a>
+                <li class="navbar-item"><a href="contact.html">Contact
+                        <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu contact" /></a>
                     <ul class="dropdown" id="navbarContact">
                         <li><a href="donate.html">Donate</a></li>
                         <li><a href="get_involved.html">Get Involved</a></li>
@@ -44,13 +44,13 @@
             <span></span>
         </label>
     </header>
-    <main class="">
-        <video autoplay muted loop id="myVideo" class="">
+    <main>
+        <video autoplay muted loop id="myVideo">
             <source src="img/The-Crosswalk.mp4" type="video/mp4">
         </video>
         <section class="pad hero" id="home">
             <div></div>
-            <article class="polygonHome color">
+            <article class="box-hero">
                 <h1>ESACH News</h1>
                 <p>It is an inter-university cross-border network whose main objective is the interdisciplinary
                     collaboration among European University Students, alumni and also young professionals in the field
@@ -61,9 +61,9 @@
                 </div>
             </article>
         </section>
-        <section class="pad color grid3" id="news">
-            <div class="element1">
-                <div class="stickyText" style="position: sticky; top: 4rem;">News</div>
+        <section class="pad grid-3col" id="news">
+            <div class="col-1-left">
+                <h2 class="stickyText">News</h2>
             </div>
             <div class="element2 no-border">
                 <article class="news-article">
@@ -90,22 +90,23 @@
         </section>
         <section class="grid-2elements">
             <div class="element-square">
-                <img class="element-square-image" src="img/events.jpg">
-                <div class="element-square-text">
+                <img class="element-square-image" src="img/events.jpg" alt="esach events">
+                <article class="element-square-text">
                     <h2>Events</h2>
                     <p>We organize events for improvement in the organization and for spreading our knowledge across the
                         world.</p>
                     <a href="events.html" class="button">Events</a>
-                </div>
+                </article>
 
             </div>
             <div class="element-square">
-                <img class="element-square-image" src="img/publications.jpg">
-                <div class="element-square-text">
+                <img class="element-square-image" src="img/publications.jpg" alt="esach publications">
+                <article class="element-square-text">
                     <h2>Publications</h2>
-                    <p>Our publications will help you navigate through our research environment and provide further information.</p>
+                    <p>Our publications will help you navigate through our research environment and provide further
+                        information.</p>
                     <a href="publications.html" class="button">Publications</a>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -113,7 +114,7 @@
         <div class="center">
             <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">
         </div>
-        <div class="">
+        <div>
             <h3>Click here if don't find what you are looking for</h3>
             <a href="faq.html" class="button">FAQ</a>
         </div>
@@ -147,32 +148,32 @@
         <div class="menu-footer">
             <div class="menu-footer-item">
                 <h3 style="margin-bottom: 0;">About us</h3>
-                <img src="img/logo-white.png" alt="Logo white " style="margin-top: 1rem;" height="24px">
+                <img src="img/logo-white.png" alt="Logo white" class="logo-footer" height="24">
                 <p>Our main objective is the interdisciplinary
                     collaboration among European University Students</p>
             </div>
             <div class="menu-footer-item">
                 <h3 style="margin-bottom: 0;">Discover us</h3>
                 <ul>
-                    <li class=""><a href="news.html">News</a></li>
-                    <li class=""><a href="publications.html">Publications</a></li>
-                    <li class=""><a href="events.html">Events</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="events.html">Events</a></li>
                 </ul>
             </div>
             <div class="menu-footer-item">
                 <h3 style="margin-bottom: 0;">Contact us</h3>
                 <ul>
-                    <li class=""><a href="get_involved.html">Join us</a></li>
-                    <li class=""><a href="tel:+49-123-1234345">+49 123 1234345</a></li>
-                    <li class=""><a href="mailto: studentsforculturalheritage@gmail.com">e-mail</a></li>
+                    <li><a href="get_involved.html">Join us</a></li>
+                    <li><a href="tel:+49-123-1234345">+49 123 1234345</a></li>
+                    <li><a href="mailto:studentsforculturalheritage@gmail.com">e-mail</a></li>
                 </ul>
             </div>
             <div class="menu-footer-item">
                 <h3 style="margin-bottom: 0;">Legal</h3>
                 <ul>
-                    <li class=""><a href="https://policies.google.com/privacy">Privacy & Policy</a></li>
-                    <li class=""><a href="https://adssettings.google.com/authenticated">Terms & Conditions</a></li>
-                    <li class=""><a href="imprint.html">Imprint</a></li>
+                    <li><a href="https://policies.google.com/privacy">Privacy & Policy</a></li>
+                    <li><a href="https://adssettings.google.com/authenticated">Terms & Conditions</a></li>
+                    <li><a href="imprint.html">Imprint</a></li>
                 </ul>
             </div>
         </div>

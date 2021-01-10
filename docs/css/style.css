@@ -453,7 +453,7 @@ font-size: 3rem;
   padding: 0.5rem 1rem 1rem 1rem;
   border: 8px solid var(--yellow);
   z-index: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   flex: 1 1 auto;
   overflow-y: auto;
   min-height: 100px;
@@ -859,6 +859,7 @@ ul.breadcrumb {
     background-color: var(--light);
     border: 8px solid var(--yellow);
     padding: 1rem;
+    margin-bottom: 1rem;
   }
   .element-half-right {
     grid-column-start: 2;
@@ -866,6 +867,7 @@ ul.breadcrumb {
     background-color: var(--light);
     border: 8px solid var(--yellow);
     padding: 1rem;
+    margin-bottom: 1rem;
   }
 
 

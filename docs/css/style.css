@@ -915,10 +915,6 @@ ul.breadcrumb {
         padding-top:0;
         min-height: unset;
     }
-    .grid-3col {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
     .card {
     flex: 0 0 240px;
     box-sizing: border-box;
@@ -982,6 +978,10 @@ ul.breadcrumb {
     .grid-img-text {
       grid-template-columns: 1fr;
     }
+    .grid-3col {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
     .small-hero {
       padding: 2rem;
     }
@@ -1032,3 +1032,6 @@ ul.breadcrumb {
 
 }  
 
+.breadcrumb-icon {
+  height: 1rem
+}

@@ -750,8 +750,8 @@ ul.breadcrumb li a {
 
 @media only screen and (max-width: 767px) {
   .pad {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2em;
+    padding-right: 2rem;
   }
   .sm-title {
     font-size: 2rem;

@@ -645,6 +645,8 @@ section {
   position: absolute;
   top: 50%;
   right: 0;
+  border: 8px solid var(--yellow);
+
 }
 
 .element-square-text > h2 {

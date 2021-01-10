@@ -427,6 +427,25 @@ font-size: 3rem;
     position: relative;
 }
 
+.element5{
+    margin-bottom: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.element6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    border-right: 8px solid var(--yellow);
+}
+
+
 .element2 {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -448,7 +467,9 @@ font-size: 3rem;
   text-align: right;
 }
 
-
+.alignLeft {
+    text-align: left;
+}
 
 
 .polygon {
@@ -481,6 +502,20 @@ font-size: 3rem;
   background-color: var(--light);
   color: var(--dark);
 }
+
+.polygonEvents {
+    padding: 0.5rem 1rem 1rem 1rem;
+    border: 8px solid var(--yellow);
+    z-index: 1;
+    margin-bottom: 0.5rem;
+    flex: 0.5 1 auto;
+    overflow-y: auto;
+    min-height: 400px;
+    color: var(--dark);
+}
+
+
+
 
 .title {
     font-size: 4rem;
@@ -597,6 +632,17 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 1rem;
 }
+
+.grid5 {
+    padding-top:2rem;
+    padding-bottom:2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 2rem;
+}
+
+
+
 .grid2 {
   padding-top:8rem;
   padding-bottom:8rem;
@@ -788,6 +834,11 @@ grid-gap: 1rem;
 .img-network {
   width: 100%;
   border: 8px solid var(--yellow);
+}
+
+.img-events {
+    width: 90%;
+    border: 8px solid var(--yellow);
 }
 
 /** footer **/

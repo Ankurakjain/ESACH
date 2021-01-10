@@ -814,6 +814,21 @@ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 grid-gap: 1rem;
 }
 
+.join_us_index{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    /* Grid styles */
+    display: grid;
+    align-items: left;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1rem;
+}
+
+
+
+
+
+
 .no-border {
   border: none;
 }
@@ -1179,6 +1194,116 @@ input[type="text"]:focus, input[type="email"]:focus {
     .form-wrap {margin: 20px auto; max-width: 550px; width:100%;}
     .profile, form {float: none; width: 100%;}
     h1 {margin-top: auto; padding-bottom: 50px;}
+}
+
+
+
+
+
+
+a.button {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: var(--dark);
+    font-size: 1.25rem;
+    color: var(--light);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+a.button:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    border: 2px solid var(--yellow);
+}
+
+
+
+/*for events list*/
+
+
+h1c {
+    text-align: center;
+}
+.half {
+    float: left;
+    width: 50%;
+    padding: 0 1em;
+}
+
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    background-color: var(--button2_colour);
+    color: var(--black);
+    overflow: hidden;
+}
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background-color: var(--button2_colour);
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+}
+
+.blue label {
+    background: #2980b9;
+
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--light);
+    color: var(--black);
+
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+}
+
+.tab-content p {
+}
+
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+
+
+/* Icon */
+
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+.tab input[type=checkbox] + label::after {
+    content: "+";
+}
+
+.tab input[type=checkbox]:checked + label::after {
+    transform: rotate(45deg);
 }
 
 

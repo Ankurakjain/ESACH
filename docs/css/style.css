@@ -750,7 +750,7 @@ ul.breadcrumb li a {
 
 @media only screen and (max-width: 767px) {
   .pad {
-    padding-left: 2em;
+    padding-left: 2rem;
     padding-right: 2rem;
   }
   .sm-title {
@@ -768,6 +768,8 @@ ul.breadcrumb li a {
     grid-column-end: 1;
     font-size: 2.5rem;
     margin-top: 1rem;
+    border-left: 8px solid var(--yellow);
+    padding-left: 1rem;
   }
   .element2 {
     grid-column-start: 1;
@@ -989,3 +991,10 @@ ul.breadcrumb li a {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {}
+
+/* Ultra small devices */
+@media only screen and (max-width: 399px) {
+  .pad {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }

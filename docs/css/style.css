@@ -107,6 +107,28 @@ a.button2:hover {
 }
 
 
+a.button3 {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: var(--button2_colour);
+    font-size: 1.25rem;
+    color: var(--dark);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+a.button3:hover {
+    background-color: var(--button2_colour);
+    color: var(--dark);
+    border: 2px solid var(--yellow);
+}
+
+
+
+
 video {
     object-fit: cover;
     width: 100vw;

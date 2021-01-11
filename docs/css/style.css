@@ -103,7 +103,7 @@ video {
 }
 
 
-/* navigation styles start here */
+/* navigation style */
 
 header {
   text-align: center;
@@ -136,7 +136,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: black;
+  background:#2b2b2b;;
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -180,7 +180,7 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color:#2b2b2b;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
@@ -188,7 +188,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color:#2b2b2b;
 }
 
 .nav-toggle:checked~nav {

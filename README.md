@@ -143,3 +143,36 @@ The layout implies spreading up content upon a full screen photo/image. Thus, te
 ### XML example Document
 An [XML document]( event_calander.xml ) has been created for the events calendar page. 
 
+### Division of Work
+We designed a demo version of the website together and then 
+uploaded it from Mattia’s account (https://github.com/Ankurakjain/ESACH/issues/5).
+We didn’t split the work in terms of pages but due to some personal and git related issues most of the changes were uploaded from Mattia’s accounts. Albert got access too late so we decided to create his branch “Albw” from “main” for experiments. He had never used git before and he thought that at the end he could somehow merge his branch with main, adding other improvements (and this would be the final version). In the process of merging there are a lot of merge conflicts so he couldn’t do it, so we decided not to merge in order not to impact the “main” branch and keep this last one as the final version. Now we have 2 different versions of the website.
+
+Mattia Dallai @tiadal @pre-step main
+Demo version of the whole website (We made demo version of the website together and then just upload it from Mattia’s account)
+HTML and CSS code validation
+Communications with client team
+HTML/CSS Implementation of “index” page
+HTML/CSS Implementation “about” of page
+HTML/CSS Implementation of “FAQ” page
+HTML/CSS Implementation of “Network” page
+HTML/CSS Implementation of “Supporting institutes” page
+HTML/CSS Implementation of “Committee” page
+HTML/CSS Implementation of “News” page
+HTML/CSS Implementation of “Events” page
+HTML/CSS Implementation of “Publications” page
+HTML/CSS implementation of “get_involved” page
+HTML/CSS Implementation of “donate” page
+
+Albert Veprev @AlbertV11 Albw branch
+Demo version of the whole website (We made demo version of the website together and then just upload it from Mattia’s account)
+HTML and CSS code validation
+Communications with client team
+HTML/CSS implementation of “get_involved” page
+HTML/CSS Implementation of “donate” page
+HTML/CSS Implementation of “events” page
+HTML/CSS Implementation of “index” page
+HTML/CSS Implementation of “FAQ” page
+HTML/CSS Implementation of “contact” page
+HTML/CSS Implementation of “committee” page
+HTML/CSS Implementation of “supporting” institutes page

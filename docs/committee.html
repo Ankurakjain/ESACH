@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <title>Committee</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,24 +14,31 @@
 
 <body>
 <header class="pad" id="header">
-    <h1 class="logo"><img src="img/logo.png" alt="Logo" height="32px"></h1>
+    <h1 class="logo"><img src="img/logo.png" alt="Logo" height="32"></h1>
     <input type="checkbox" class="nav-toggle" id="nav-toggle">
     <nav>
         <ul>
             <li class="navbar-item"><a href="index.html">Home</a></li>
-            <li class="navbar-item" ><a href="news.html">News</a>
-                <!--   <ul class="dropdown" id="navbarNews">
-                      <li><a href="#">Sub-1</a></li>
-                      <li><a href="#">Sub-2</a></li>
-                    </ul> -->
+            <li class="navbar-item"><a href="news.html">News
+                <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu news" /></a>
+                <ul class="dropdown" id="navbarNews">
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                </ul>
             </li>
-            <li class="navbar-item"><a href="about.html">About</a>
-                <!--    <ul class="dropdown" id="navbarAbout">
-                       <li><a href="#">Sub-1</a></li>
-                       <li><a href="#">Sub-2</a></li>
-                    </ul> -->
+            <li class="navbar-item"><a href="about.html">About
+                <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu about" /></a>
+                <ul class="dropdown" id="navbarAbout">
+                    <li><a href="network.html">Network</a></li>
+                </ul>
             </li>
-            <li class="navbar-item"><a href="contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="contact.html">Contact
+                <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu contact" /></a>
+                <ul class="dropdown" id="navbarContact">
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="get_involved.html">Get Involved</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
@@ -78,31 +87,31 @@
         <div class="element2">
             <div class="elementFull cards">
                 <article class="card color">
-                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <img class="card-image" src="img/placeholderMale.jpg" alt = "person photo">
                     <h3 class="card-title">Marius Muller</h3>
                     <p class="card-text">Founding President</p>
                 </article>
 
                 <article class="card color">
-                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <img class="card-image" src="img/placeholderMale.jpg" alt = "person photo">
                     <h3 class="card-title">Carlota Marijuan Rodriguez</h3>
                     <p class="card-text">Vice President, External Communications & Partners</p>
                 </article>
 
                 <article class="card color">
-                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <img class="card-image" src="img/placeholderMale.jpg" alt = "person photo">
                     <h3 class="card-title">Nuria Gscons Cuatrecasas</h3>
                     <p class="card-text">Internal Communications & Member Engagement</p>
                 </article>
 
                 <article class="card color">
-                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <img class="card-image" src="img/placeholderMale.jpg" alt = "person photo">
                     <h3 class="card-title">Ainara Guerra Fernandez</h3>
                     <p class="card-text">Digital Media Manager</p>
                 </article>
 
                 <article class="card color">
-                    <img class="card-image" src="img/placeholderMale.jpg">
+                    <img class="card-image" src="img/placeholderMale.jpg" alt = "person photo">
                     <h3 class="card-title">Alexandra de Carvalho Antunes</h3>
                     <p class="card-text">Publications</p>
                 </article>
@@ -148,7 +157,7 @@
     <div class="menu-footer">
         <div class="menu-footer-item">
             <h3 style="margin-bottom: 0;">About us</h3>
-            <img src="img/logo-white.png" alt="Logo white " style="margin-top: 1rem;" height="24px">
+            <img src="img/logo-white.png" alt="Logo white " style="margin-top: 1rem;" height="24">
             <p>Our main objective is the interdisciplinary
                 collaboration among European University Students</p>
         </div>

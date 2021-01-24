@@ -53,15 +53,15 @@ h1 {
 }
 
 a.button {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-top: 1rem;
   text-decoration: none;
   border: 2px solid black;
   border-radius: 0;
   background-color: #2b2b2b;
   font-size: 1.25rem;
   color: #f5f5f5;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  display: inline-block;
-  margin-top: 1rem;
 }
 
 a.button:hover {
@@ -199,15 +199,13 @@ nav a:hover {
   opacity: 1;
 }
 
-.logo {
-  left: 2rem;
-  top: 1rem;
-  position: absolute;
-  z-index: 4;
+.logo-header {
+  height:32px;
 }
 
 .logo-footer {
   margin-top: 1rem;
+  height: 24px;
 }
 
 .dropdown {
@@ -445,7 +443,6 @@ section.hero {
 .hero {
   display: grid;
   align-items: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
   grid-template-columns: 1fr 1fr;
 }
 
@@ -630,6 +627,18 @@ section.hero {
   border: 8px solid #F3AF51;
 }
 
+.image-mission {
+  width:100%; 
+  padding:1rem;
+}
+
+.image-faq {
+  height: 10rem;
+}
+
+.image-ourwork {
+  width:100%; 
+}
 
 /** footer **/
 
@@ -675,7 +684,9 @@ footer {
 
 .menu-footer-item>ul>li>a:hover {}
 
-
+.menu-footer-item > h3 {
+  margin-bottom: 0;
+}
 /* Style the list */
 
 ul.breadcrumb {
@@ -896,6 +907,10 @@ ul.breadcrumb li a {
   }
   .logo {
     grid-column: 2 / 3;
+    left: 2rem;
+    top: 1rem;
+    position: absolute;
+    z-index: 4;
   }
   nav {
     /*  all: unset; this causes issues with Edge, since it's unsupported */
@@ -941,10 +956,9 @@ ul.breadcrumb li a {
     transform: scale(1, 1);
   }
   .dropdown {
-    margin: 0.5rem 0 0 0;
+    margin: 0.5rem 0 0 -1rem;
     position: absolute;
     padding: 0 1rem 1rem 1rem;
-    margin-left: -1rem;
     list-style: none;
     flex-direction: column;
     display: none;

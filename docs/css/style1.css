@@ -198,13 +198,6 @@ nav a:hover {
 .nav-toggle:checked~nav a {
   opacity: 1;
 }
-.logo {
-  left: 2rem;
-  top: 1rem;
-  position: absolute;
-  z-index: 4;
-}
-
 
 .logo-header {
   height:32px;
@@ -234,7 +227,6 @@ nav a:hover {
 .icon-sub-menu {
   position: absolute;
   margin-top: -0.5rem;
-  padding-bottom: 1rem;
 }
 
 .small-image {
@@ -329,10 +321,8 @@ nav a:hover {
   margin-top: 2rem;
   flex: 1 1 auto;
   min-height: 100px;
-  background-color: #f5f5f5;
-  color: #2b2b2b;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  background-color: #2b2b2b;
+  color: #f5f5f5;
 }
 
 .box-donate {
@@ -404,7 +394,7 @@ nav a:hover {
   bottom: 0;
   background-color: #f5f5f5;
   width: 100%;
-  min-height: 3rem;
+  height: 3rem;
   /* Grid styles */
   display: grid;
   align-items: center;
@@ -442,7 +432,6 @@ section {
 section.hero {
   width: 100%;
   min-height: 100vh;
-  align-items: center;
 }
 
 .parallax {
@@ -654,12 +643,12 @@ section.hero {
 /** footer **/
 
 footer {
-  background-color: #F3AF51;
+  background-color: #282828;
   width: 100%;
 }
 
 .menu-footer {
-  color: #2b2b2b;
+  color: #f5f5f5;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 1rem;
@@ -669,7 +658,7 @@ footer {
 
 .copyright {
   text-align: center;
-  color: #2b2b2b;
+  color: #f5f5f5;
   font-size: 1rem;
   padding: 2rem;
 }
@@ -687,7 +676,7 @@ footer {
 
 .menu-footer-item>ul>li>a {
   display: block;
-  color: #2b2b2b;
+  color: white;
   text-align: center;
   text-decoration: none;
   float: left;
@@ -868,18 +857,6 @@ ul.breadcrumb li a {
     align-items: start;
     grid-template-columns: 1fr;
   }
-  .box-hero {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  .menu-footer {
-    padding-top: 0rem;
-  }
-  .flex {
-    padding-top: 1rem;
-    padding-bottom: 0;
-    justify-content: space-between;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -889,7 +866,7 @@ ul.breadcrumb li a {
     justify-content: space-between;
   }
   .sticky {
-    min-height: 4rem;
+    height: 4rem;
   }
   nav {
     height: unset;
@@ -936,6 +913,8 @@ ul.breadcrumb li a {
     z-index: 4;
   }
   nav {
+    /*  all: unset; this causes issues with Edge, since it's unsupported */
+    /* add Edge support */
     position: relative;
     text-align: left;
     transition: none;
@@ -943,6 +922,7 @@ ul.breadcrumb li a {
     background: none;
     top: initial;
     left: initial;
+    /* end Edge support stuff */
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -990,16 +970,10 @@ ul.breadcrumb li a {
   }
   .navbar-item:hover>ul {
     display: block;
-    display: flex
-  }
-  .navbar-item > a {
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    display: flex;
   }
   .img-publication {
     width: 66%;
-  }
-  .none-big {
-    display: none;
   }
 }
 

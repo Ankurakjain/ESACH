@@ -71,7 +71,7 @@ a.button:hover {
 }
 
 .menu-toggle {
-  display: none!important;
+  display: none;
 }
 
 /** video **/
@@ -692,7 +692,6 @@ footer {
   text-decoration: none;
   float: left;
 }
-
 
 .menu-footer-item > h3 {
   margin-bottom: 0;

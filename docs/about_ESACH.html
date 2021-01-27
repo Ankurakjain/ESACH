@@ -16,34 +16,28 @@
 
 <body>
     <header class="pad" id="header">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt="ESACH Logo" height="32"></a>
-        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="ESACH home" class="logo-header"/></a>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle" tabindex="-1" placeholder="NoTabIndex">
         <nav id="nav">
             <ul>
                 <li class="navbar-item"><a href="index.html">Home</a></li>
-                <li class="navbar-item"><a href="news.html">News
-                        <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu news" /></a>
+                <li class="navbar-item"><a href="ESACH_news.html">News
+                    <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu news"/></a>
                     <ul class="dropdown" id="navbarNews">
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="ESACH_events.html">Events</a></li>
+                        <li><a href="ESACH_publications.html">Publications</a></li>
                     </ul>
                 </li>
-                <li class="navbar-item"><a href="about.html">About
-                        <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu about" /></a>
+                <li class="navbar-item"><a href="about_ESACH.html">About
+                    <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu about"/></a>
                     <ul class="dropdown" id="navbarAbout">
-                        <li><a href="network.html">Network</a></li>
+                        <li><a href="ESACH_network.html">Network</a></li>
                     </ul>
                 </li>
-                <li class="navbar-item"><a href="contact.html">Contact
-                        <img class="icon-sub-menu none" src="img/arrow.svg" alt="icon for submenu contact" /></a>
-                    <ul class="dropdown" id="navbarContact">
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="get_involved.html">Get Involved</a></li>
-                    </ul>
-                </li>
+                <li class="navbar-item"><a href="ESACH_contact.html">Contact</a></li>
             </ul>
         </nav>
-        <label for="nav-toggle" class="nav-toggle-label" id="nav-menu-button">
+        <label for="nav-toggle" class="nav-toggle-label" id="nav-menu-button" aria-controls="global-nav" aria-label="Open navigation menu">
             <span></span>
         </label>
     </header>
@@ -52,7 +46,6 @@
             <source src="img/The-Crosswalk.mp4" type="video/mp4">
         </video>
         <section class="pad hero" id="home">
-            <div></div>
             <article class="box-hero">
                 <h1>About us</h1>
                 <p>It is a youth-led network that includes undergraduates and graduate university students, PhD
@@ -65,7 +58,7 @@
             </article>
         </section>
         <section class="pad red grid-3col bold" id="mission">
-            <img src="img/target.svg" style="width:100%; padding:1rem">
+            <img src="img/target.svg" class="image-mission" alt="" />
             <article class="borderBold">
                 <h2 class="sm-title">Goal</h2>
                 <p>The aim of ESACH is to establish an interdisciplinary network of university students, from
@@ -78,80 +71,99 @@
             </article>
         </section>
         <section class="pad color grid-3col" id="network">
-            <div class="col-1-left content-lg-right-sm-left" >
+            <div class="col-1-left content-lg-right-sm-left" > 
                 <h2 class="sm-title">Our Network</h2>
                 <p class="sm-text">Discover who we are, who is supporting
                     us and our network.</p>
-                <a href="network.html" class="button">Discover</a>
+                <a href="ESACH_network.html" class="button">Discover</a>
             </div>
             <div class="element2 no-border">
                 <picture>
                     <source type="image/webp" srcset="img/network.webp" />
-                    <img src="img/network.jpg" alt="Image network" class="img-network"/>
+                    <img src="img/network.jpg" alt="ESACH students sitting around a table" class="img-network"/>
                  </picture>
             </div>
         </section>
     </main>
     <div class="faq pad">
         <div class="center">
-            <img src="img/faq-yellow.svg" alt="Logo Twitter" style="height: 10rem">
+            <img src="img/faq-yellow.svg" class="image-faq" alt=""/>
         </div>
         <div>
             <h3>Click here if don't find what you are looking for</h3>
-            <a href="faq.html" class="button">FAQ</a>
+            <a href="ESACH_faq.html" class="button">FAQ</a>
         </div>
     </div>
     <div class="sticky pad">
-        <div class="flex">
+        <div class="flex none">
             <div>
                 <a href="https://www.facebook.com/ESACHspirit/">
-                    <img src="img/facebook.svg" alt="Logo Facebook" class="social-icon">
+                    <img src="img/facebook.svg" alt="Logo Facebook" class="social-icon" />
                 </a>
             </div>
             <div>
                 <a href="https://www.youtube.com/channel/UCi-Xq75ID4NbkwLqBb-lAGA">
-                    <img src="img/youtube.svg" alt="Logo Youtube" class="social-icon">
+                    <img src="img/youtube.svg" alt="Logo Youtube" class="social-icon" />
                 </a>
             </div>
             <div>
                 <a href="https://twitter.com/esach_spirit">
-                    <img src="img/twitter.svg" alt="Logo Twitter" class="social-icon">
+                    <img src="img/twitter.svg" alt="Logo Twitter" class="social-icon" />
                 </a>
             </div>
         </div>
-        <div class="none ">
+        <div>
             <ul class="breadcrumb">
                 <li><a href="index.html">easach.org</a></li>
-                <li><a href="about.html">about</a></li>
+                <li><a href="about_ESACH.html">about</a></li>
             </ul>
         </div>
     </div>
     <footer class="pad">
+        <div class="flex none-big">
+            <div>
+                <a href="https://www.facebook.com/ESACHspirit/">
+                    <img src="img/facebook.svg" alt="Logo Facebook" class="social-icon" />
+                </a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/channel/UCi-Xq75ID4NbkwLqBb-lAGA">
+                    <img src="img/youtube.svg" alt="Logo Youtube" class="social-icon" />
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/esach_spirit">
+                    <img src="img/twitter.svg" alt="Logo Twitter" class="social-icon" />
+                </a>
+            </div>
+        </div>
         <div class="menu-footer">
             <div class="menu-footer-item">
-                <h3 style="margin-bottom: 0;">About us</h3>
-                <img src="img/logo-white.png" alt="Logo white" class="logo-footer" height="24">
+                <h3>About us</h3>
+                <img src="img/logo.png" alt="ESACH Logo" class="logo-footer"/>
                 <p>Our main objective is the interdisciplinary
                     collaboration among European University Students</p>
             </div>
             <div class="menu-footer-item">
-                <h3 style="margin-bottom: 0;">Discover us</h3>
+                <h3>Discover us</h3>
                 <ul>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="ESACH_news.html">News</a></li>
+                    <li><a href="ESACH_publications.html">Publications</a></li>
+                    <li><a href="ESACH_events.html">Events</a></li>
                 </ul>
             </div>
             <div class="menu-footer-item">
-                <h3 style="margin-bottom: 0;">Contact us</h3>
+                <h3>Contact us</h3>
                 <ul>
-                    <li><a href="get_involved.html">Join us</a></li>
-                    <li><a href="tel:+49-123-1234345">+49 123 1234345</a></li>
-                    <li><a href="mailto:studentsforculturalheritage@gmail.com">e-mail</a></li>
+                    <li><a href="join_ESACH.html">Join us</a></li>
+                    <li><a itemprop="telephone" href="tel:+49-123-1234345">
+<span itemprop="telephone">+49 123 1234345</span></a></li>
+                    <li><a itemprop="email" href="mailto:studentsforculturalheritage@gmail.com">
+<span itemprop="email">e-mail</span></a></li>
                 </ul>
             </div>
             <div class="menu-footer-item">
-                <h3 style="margin-bottom: 0;">Legal</h3>
+                <h3>Legal</h3>
                 <ul>
                     <li><a href="https://policies.google.com/privacy">Privacy & Policy</a></li>
                     <li><a href="https://adssettings.google.com/authenticated">Terms & Conditions</a></li>
@@ -160,7 +172,7 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; Copyright 2021, Esach
+            &copy; Copyright 2021, Esach. Accessibility by Dallai, SEO by Veprev.
         </div>
     </footer>
 </body>

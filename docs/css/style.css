@@ -70,6 +70,7 @@ a.button:hover {
   border: 2px solid #F3AF51;
 }
 
+
 /** video **/
 
 video {
@@ -1145,3 +1146,4 @@ input[type="text"]:focus, input[type="email"]:focus {
   .profile, form {float: none; width: 100%;}
   h1 {margin-top: auto; padding-bottom: 50px;}
 }
+

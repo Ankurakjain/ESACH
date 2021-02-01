@@ -882,6 +882,9 @@ ul.breadcrumb li a {
     padding-bottom: 0;
     justify-content: space-between;
   }
+  .box-donate {
+    margin-top:4rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

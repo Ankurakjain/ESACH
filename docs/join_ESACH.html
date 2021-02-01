@@ -2,16 +2,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
-    <title>Join ESACH</title>
+    <title>Join us | ESACH</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Become a member of ESACH and join our international network of people interested in cultural heritage.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="img/favicon/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "NGO",
+            "name" : "ESACH",
+            "telephone" : "+49 123 1234345"
+        }
+    </script>
+
 </head>
 
 <body>
@@ -48,18 +62,44 @@
         <section class="pad hero" id="getInvolved">
             <article class="box-donate">
                 <h1>Get Involved</h1>
-                <p>If you want to collaborate or be part of a great networks of don't esitate to contact us. We are
+                <p>If you want to collaborate or be part of a great networks of don't hesitate to contact us. We are
                     always welcome to let new people part of our project.</p>
-                <form>
-                    <h2>Tell us who you are</h2>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" value=""><br><br>
-                    <label for="surname">Surname</label><br>
-                    <input type="text" id="surname" name="surname" value=""><br><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email" value=""><br><br>
-                    <input type="submit" value="Collaborate">
-                </form>
+
+                <div class="form-join">
+                    <div class="profile"><img src="img/placeholderMale_small.jpg">
+                        <a class="button2" href="mailto: abc@example.com">Upload photo</a>
+                    </div>
+                    <form method="post">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="radio">
+                            <span>Gender</span>
+                            <label>
+                                <input type="radio" name="sex" value="men">men
+                                <div class="radio-control male"></div>
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="women">women
+                                <div class="radio-control female"></div>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="Notes">Notes</label>
+                            <input type="text" name="notes">
+                        </div>
+
+                        <a class="button" href="mailto: abc@example.com">Submit</a>
+                    </form>
+
+                </div>
             </article>
         </section>
     </main>

@@ -71,6 +71,7 @@ a.button:hover {
 }
 
 
+
 /** video **/
 
 video {
@@ -598,10 +599,6 @@ section.hero {
   margin-bottom: 1rem;
 }
 
-.grid-mono-title {}
-
-.grid-mono-text {}
-
 .bold {
   font-weight: 500;
   font-size: 1.25rem;
@@ -693,8 +690,6 @@ footer {
   text-decoration: none;
   float: left;
 }
-
-.menu-footer-item>ul>li>a:hover {}
 
 .menu-footer-item > h3 {
   margin-bottom: 0;

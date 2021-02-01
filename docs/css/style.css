@@ -221,6 +221,10 @@ nav a:hover {
   margin-top: 1rem;
 }
 
+.menu-toggle {
+  display: none;
+  visibility: hidden;
+}
 
 .link-wrapper {
   margin-bottom: 1.5rem;
@@ -265,6 +269,8 @@ nav a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+
 
 /** paddings **/
 
